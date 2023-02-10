@@ -25,9 +25,9 @@ jobs:
           
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
-          cml-publish feature_importance.png --md >> report.md
-          cml-publish residuals.png --md >> report.md
-          cml-send-comment report.md
+          echo '![](./feature_importance.png "Confusion Matrix")' >> report.md
+          echo '![](./residuals.png "Confusion Matrix1")' >> report.md
+          cml comment create report.md
      
           
           
