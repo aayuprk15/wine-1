@@ -25,10 +25,6 @@ jobs:
           
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
-          echo '![](./feature_importance.png "Confusion Matrix")' >> report.md
-          echo '![](./residuals.png "Confusion Matrix1")' >> report.md
-          cml comment create report.md
-     
           
           
           
